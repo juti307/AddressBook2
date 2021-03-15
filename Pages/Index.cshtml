@@ -1,0 +1,70 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Index mojej strony";
+}
+
+<div class="text-center">
+    <div class="demo lineh200%">
+        <h1 class="display-4">Welcome @Model.Name</h1>
+        <br />
+        <!--
+            <form method="post">
+                <label for="Street">Street:</label>
+                <input name="Street" /><br />
+                <label for="Number">Numer:</label>
+                <input type="number" name="Number" /><br />
+                <label for="ZipCode">Kod pocztowy:</label>
+                <input name="ZipCode" /><br />
+                <label for="City">Miasto:</label>
+                <input name="City" /><br />
+                <button type="submit">Zatwierdź</button>
+            </form>
+        -->
+        <!--
+
+        <form method="post">
+            <span asp-validation-for="Address.Street" class="text-danger"></span>
+            <label asp-for="Address.Street"></label>
+        <input asp-for="Address.Street" /><br />
+        <label asp-for="Address.Number"></label>
+        <input asp-for="Address.Number" /><br />
+        <label asp-for="Address.ZipCode"></label>
+        <input asp-for="Address.ZipCode" /><br />
+        <label asp-for="Address.City"></label>
+        <input asp-for="Address.City" /><br />
+        <button type="submit">Zatwierdź</button>
+        </form>
+
+         -->
+
+
+        <form>
+            <div class="row">
+                <div class="col">
+                    <span asp-validation-for="Address.Street" class="text-danger"></span>
+                    <label asp-for="Address.Street"></label>
+                    <input type="text" class="form-control" id="street">
+                </div>
+                <div class="col">
+                    <label asp-for="Address.Number"></label>
+                    <input type="number" class="form-control" id="number">
+                </div>
+                <div class="col">
+                    <label asp-for="Address.ZipCode"></label>
+                    <input type="text" class="form-control" id="zipcode">
+                </div>
+                <div class="col">
+                    <label asp-for="Address.City"></label>
+                    <input type="text" class="form-control" id="city">
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <button type="submit" class="btn btn-primary">Zatwierdź</button>
+        </form>
+    </div>
+
+
+</div>
