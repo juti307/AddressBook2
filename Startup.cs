@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// doda³am now¹ ga³¹Ÿ ludzie i robie prymiarki!!!!!!
+/// </summary>
 namespace AddressBookPS02
 {
     public class Startup
